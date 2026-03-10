@@ -437,14 +437,196 @@
 
 # Task 41
 
-import random
-k=random.randint(1,100)
-print(k)
-n=int(input("texmini daxil edin"))
-if n!=k:
-    n=int(input("birdaha daxil eddin"))
+# import random
+
+# k = random.randint(1, 100)
+# print(k)
+# n = int(input("texmini daxil edin"))
+# while n != k:
+#     n = int(input("birdaha daxil eddin"))
+#     if n > k:
+#         print("Lower")
+#     else:
+#         print("Higher")
+# else:
+#     print("tebrikler")
+
+# Task 42
+
+# cem = 0
+# while True:
+#     n = int(input())
+#     if n == 0:
+#         print("Stop")
+#         break
+#     cem = cem + n
+# print(cem)
+
+# Task 43
+
+# balance = 1000
+# action = input("emeliyyat novunu yazin: ")
+# if action == "deposit":
+#     amount = float(input("daxil edeceyiniz mebllegi daxiledin: "))
+#     balance = balance + amount
+#     print(f"son balance {balance}")
+# elif action == "withdraw":
+#     price = float(input("cixaraciqiniz meblegi daxil edin: "))
+#     if price > balance:
+#         print("kifayet qeder balans yoxdur")
+#     else:
+#         balance = balance - price
+#         print(f"son balans {balance}")
+# elif action == "check balance":
+#     print(f"sizin balansiiniz {balance}")
+# elif action == "quit":
+#     print("cixis edildi")
+
+# Task 44
+
+# n = int(input())
+
+# while n != 1:
+#     if n % 2 == 0:
+#         n = n / 2
+#         print(n)
+#     else:
+#         n = 3 * n + 1
+#         print(n)
+
+# Task 45
+
+# n = int(input("ededi daxil edin:"))
+# i = 0
+# k = 1
+# x = 0
+# c = 0
+# while i < n:
+#     print(x)
+#     c = x
+#     x = k
+#     k = c + k
+#     i = i + 1
+
+# Task 46
+
+# password = input("sifreni daxil edin")
+# if len(password) >= 8:
+#     for i in password:
+#         if (
+#             (i == "1")
+#             or (i == "2")
+#             or (i == "3")
+#             or (i == "4")
+#             or (i == "5")
+#             or (i == "6")
+#             or (i == "7")
+#             or (i == "8")
+#             or (i == "9")
+#         ):
+#             if any(char.isupper() for char in password):
+#                 print("sifre qebul edildi ")
+#             else:
+#                 print("sifre duz deyil")
+#         else:
+#             print("sifre duz deyil")
+# else:
+#     print("uzunluq azdir")
+
+
+# Task 47
+# print("1. Kalkulyator")
+# print("2. Konverter")
+# print("3. Viktorina")
+# print("4. cıxıs")
+
+
+# while True:
+#     options = input("secim edin (1-4): ")
+
+#     if options == "1":
+#         print("Kalkulyator bolmesine xos geldiniz.")
+#     elif options == "2":
+#         print("Konverter bolmesine xos geldiniz.")
+#     elif options == "3":
+#         print("Viktorina baslayir")
+#     elif options == "4":
+#         print("Proqramdan cıxılır")
+#         break
+#     else:
+#         print(" Yeniden yoxlayin")
+
+# Task 48
+
+# a = int(input("Birinci ededi daxil edin: "))
+# b = int(input("İkinci ededi daxil edin: "))
+
+# while a != b:
+#     if a > b:
+#         a = a - b
+#     else:
+#         b = b - a
+
+# print(f"ƏBOB: {a}")
+
+# Task 49
+
+# neticeler = ""
+
+# for i in range(5):
+#     name = input("Ad daxil edin: ")
+#     score = int(input("Bal daxil edin: "))
+
+#     if score >= 50:
+#         status = "Keçdi"
+#     else:
+#         status = "Kəsildi"
+#     neticeler = neticeler + name + " - " + str(score) + " - " + status + "\n"
+
+# print(neticeler)
+
+# Task 50
+
+score = 0
+
+# Sual 1
+cavab1 = input("1. Dünyada ən çox qonşusu olan ölkə hansıdır? ")
+if cavab1 == "çin":
+    print("Düzdür!")
+    score = score + 1
 else:
-    print("tebrikler")
+    print("Səhvdir. Düzgün cavab: Çin")
 
+# Sual 2
+cavab2 = input("2. Suyun kimyəvi formulu nədir? ")
+if cavab2 == "h2o":
+    print("Düzdür!")
+    score = score + 1
+else:
+    print("Səhvdir. Düzgün cavab: H2O")
 
+# Sual 3
+cavab3 = input("3. Hansı planet 'Qırmızı Planet' kimi tanınır? ")
+if cavab3 == "mars":
+    print("Düzdür!")
+    score = score + 1
+else:
+    print("Səhvdir. Düzgün cavab: Mars")
 
+# Sual 4
+cavab4 = input("4. Kompüterin 'beyni' sayılan hissə hansıdır? (Qısaltma) ")
+if cavab4 == "cpu":
+    print("Düzdür!")
+    score = score + 1
+else:
+    print("Səhvdir. Düzgün cavab: CPU")
+
+# Sual 5
+cavab5 = input("5. İşığın sürəti saniyədə təxminən neçə min km-dir? ")
+if cavab5 == "300":
+    print("Düzdür!")
+    score = score + 1
+else:
+    print("Səhvdir. Düzgün cavab: 300")
+
+print("Sənin yekun xalın:", score, "/ 5")
