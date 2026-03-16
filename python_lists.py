@@ -145,7 +145,7 @@
 
 # 22. pop() ilə sonuncu elementi listdən çıxar.
 
-myList = ["Python", "C", "C++", "HTML", "JS", "CSS"]
+# myList = ["Python", "C", "C++", "HTML", "JS", "CSS"]
 # myList.pop()
 # print(myList)
 # ---------------------------------------------------------------------------------
@@ -208,4 +208,139 @@ myList = ["Python", "C", "C++", "HTML", "JS", "CSS"]
 # for index, value in enumerate(myList):
 #     if index % 2 == 0:
 #         print(value)
+# ---------------------------------------------------------------------------------
+
+# 31. List comprehension ilə 1-dən 20-yə kimi olan bütün ədədlər listini yarat.
+# numbers = [i for i in range(1, 20)]
+# print(numbers)
+# ---------------------------------------------------------------------------------
+
+# 32. Comprehension ilə listdən yalnız 'a' hərfini ehtiva edən sözləri fil­tr et.
+# mylist = ["Python", "Azerbaycan", "salam", "sağol", "necesen"]
+# new_list = [i for i in mylist if "a" in i]
+# print(new_list)
+# ---------------------------------------------------------------------------------
+
+# 33. Comprehension ilə hər ədədin kubunu hesabla.
+# numbers = [i**3 for i in range(1, 20)]
+# print(numbers)
+# ---------------------------------------------------------------------------------
+
+# 34. Şərtli (if-else) ifadəni comprehension içinə daxil edərək mənfini 0-a çevir.
+# mylist = [1, 4, 6, -5, -8, -43, 7, 0, 66]
+# new_numbers = [0 if i < 0 else i for i in mylist]
+# print(new_numbers)
+# ---------------------------------------------------------------------------------
+
+# 35. Nested list comprehension ilə çarpma cədvəli (5x5) yarat.
+# for i in range(1, 11):
+#     print(f"5 x {i} = {5 * i}")
+
+# Digər alternativ
+# [print(f"5 x {i} = {5 * i}") for i in range(1, 11)]
+# ---------------------------------------------------------------------------------
+
+# 36. sort() ilə rəqəmlər listini artan sırada sırala.
+# reqemler = [3, 6, 8, 0, 2, 25, 53, 77, 13, 44, 100]
+# reqemler.sort()
+# print(reqemler)
+# ---------------------------------------------------------------------------------
+
+# 37. sort(reverse=True) ilə sözlər listini azalan əlifba sırasında sırala.
+# myList = ["Python", "C", "C++", "HTML", "JS", "CSS"]
+# myList.sort(reverse=True)
+# print(myList)
+# ---------------------------------------------------------------------------------
+
+# 38. sort(key=len) ilə sözlər listini uzunluğuna görə sırala
+# myList = ["Python", "C", "C++", "HTML", "JS", "CSS"]
+# myList.sort(key=len)
+# print(myList)
+# ---------------------------------------------------------------------------------
+
+# 39. sorted() ilə orijinal listi dəyişmədən sıralanmış yeni list qaytar.
+# myList = ["Python", "C", "C++", "HTML", "JS", "CSS"]
+# print(f"Evvelki List: {myList}")
+# print(f"Sıralanmış: {sorted(myList)}")
+# ---------------------------------------------------------------------------------
+
+# 40. reverse() ilə listin elementlərinin sırasını tərsinə çevir.
+# myList = ["Python", "C", "C++", "HTML", "JS", "CSS"]
+# myList.reverse()
+# print(myList)
+# ---------------------------------------------------------------------------------
+
+# 41. copy() metodu ilə listin surətini çıxar, orijinalı dəyiş, surətin dəyişmədiyini gör.
+# myList = ["Python", "C", "C++", "HTML", "JS", "CSS"]
+# newList = myList.copy()
+# myList.sort()
+# print(myList)
+# print(newList)
+# ---------------------------------------------------------------------------------
+
+# 42. list() konstruktoru ilə listin kopyasını yarat.
+# myList = ["Python", "C", "C++", "HTML", "JS", "CSS"]
+# newList = list(myList)
+# print(newList)
+# ---------------------------------------------------------------------------------
+
+# 43. Slice [:] ilə tam listin kopyasını çıxar.
+# myList = ["Python", "C", "C++", "HTML", "JS", "CSS"]
+# newList = myList[:]
+# print(newList)
+# ---------------------------------------------------------------------------------
+
+# 44. Sadə mənimsətmə (=) ilə surət çıxarmağı sına — fərqi sübut et.
+# myList = ["Python", "C", "C++", "HTML", "JS", "CSS"]
+# newList = myList
+# myList.pop()
+# print(newList)
+# ---------------------------------------------------------------------------------
+
+# 45. import copy; deepcopy() ilə nested listin tam müstəqil kopyasını yarat.
+# import copy
+
+# myList = ["Python", "C", "C++", ["Numbers", "Strings", "Boolian"], "HTML", "JS", "CSS"]
+# newList = copy.deepcopy(myList)
+# print(newList)
+# ---------------------------------------------------------------------------------
+
+# 46. + operatoru ilə iki listi birləşdir.
+# firstList = ["salam", "necesen?"]
+# secondList = ["yaxşı", "sağol"]
+# totalList = firstList + secondList
+# print(totalList)
+# ---------------------------------------------------------------------------------
+
+# 47. extend() metodu ilə birinci listə ikinci listin elementlərini əlavə et.
+# firstList = ["salam", "necesen?"]
+# secondList = ["yaxşı", "sağol"]
+# firstList.extend(secondList)
+# print(firstList)
+# ---------------------------------------------------------------------------------
+
+# 48. for loop ilə ikinci listin elementlərini birinciyə append et.
+# firstList = ["Python", "C", "C++"]
+# secondList = ["HTML", "CSS", "JS"]
+# for i in secondList:
+#     firstList.append(i)
+# print(firstList)
+# ---------------------------------------------------------------------------------
+
+# 49. * operatoru ilə listi üç dəfə təkrar et.
+# myList = ["A", "B", "C"]
+# repeatList = myList * 3
+# print(repeatList)
+# ---------------------------------------------------------------------------------
+
+# 50. + ilə birləşdirmə və extend() arasındakı fərqi göstər (in-place vs yeni list).
+# firstList = ["salam", "necesen?"]
+# secondList = ["yaxşı", "sağol"]
+# totalList = firstList + secondList
+# print(totalList)
+# + operatoru ilə yeni list yaradırıq
+
+# firstList.extend(secondList)
+# print(firstList)
+# extend() operatoru ilə bir listi genişlədirik
 # ---------------------------------------------------------------------------------
