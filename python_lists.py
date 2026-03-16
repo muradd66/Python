@@ -344,3 +344,149 @@
 # print(firstList)
 # extend() operatoru ilə bir listi genişlədirik
 # ---------------------------------------------------------------------------------
+
+# 51. append() — listə sondan element əlavə et.
+# myList = ["A", "B", "C"]
+# myList.append("D")
+# print(myList)
+# ---------------------------------------------------------------------------------
+
+# 52. clear() — listin bütün elementlərini sil.
+# myList = ["Python", "C", "C++", ["Numbers", "Strings", "Boolian"], "HTML", "JS", "CSS"]
+# myList.clear()
+# print(myList)
+# ---------------------------------------------------------------------------------
+
+# 53. copy() — listin sığ kopyasını qaytar.
+# myList = ["Python", "C", "C++", "HTML", "JS", "CSS"]
+# newList = myList.copy()
+# print(newList)
+# ---------------------------------------------------------------------------------
+
+# 54. count() — listdə müəyyən dəyərin neçə dəfə göründüyünü tap.
+# numbers = [5, 0, -5, 7, 5, 3, 8, 5, 55, 99]
+# print(numbers.count(5))
+# ---------------------------------------------------------------------------------
+
+# 55. extend() — listi başqa iterable ilə genişləndir.
+# family = ["mother", "father", "son", "doughter"]
+# family.extend(["grandmother", "grandfather"])
+# print(family)
+# ---------------------------------------------------------------------------------
+
+# 56. index() — müəyyən dəyərin ilk göründüyü indeksi qaytar.
+# numbers = [0, -5, 7, 5, 3, 8, 5, 55, 99]
+# print(numbers.index(5))
+# ---------------------------------------------------------------------------------
+
+# 57. insert() — müəyyən mövqeyə element daxil et.
+# myList = ["Python", "C", "C++", "HTML", "JS", "CSS"]
+# myList.insert(3, "React")
+# print(myList)
+# ---------------------------------------------------------------------------------
+
+# 58. pop() — müəyyən indeksdəki elementi çıxar (default: sonuncu).
+# myList = ["Python", "C", "C++", "HTML", "JS", "CSS"]
+# myList.pop()
+# print(myList)
+# ---------------------------------------------------------------------------------
+
+# 59. remove() — ilk tapılan müəyyən dəyəri sil.
+# numbers = [0, -5, 7, 5, 3, 8, 5, 55, 99]
+# numbers.remove(5)
+# print(numbers)
+# ---------------------------------------------------------------------------------
+
+# 60. reverse() — listin elementlərini tərsinə çevir.
+# myList = ["Python", "C", "C++", "HTML", "JS", "CSS"]
+# myList.reverse()
+# print(myList)
+# ---------------------------------------------------------------------------------
+
+# 61. sort() — listi sırala (default: artan)
+# myList = ["Python", "C", "C++", "HTML", "JS", "CSS"]
+# myList.sort()
+# print(myList)
+# ---------------------------------------------------------------------------------
+
+# 62. Dörd elementdən ibarət tuple yarat və çap et.
+# myTuple = ("Python", "C", "C++", "HTML")
+# print(myTuple)
+# ---------------------------------------------------------------------------------
+
+# 63. Tuplenin type()-ini yoxla.
+# myTuple = ("Python", "C", "C++", "HTML")
+# print(type(myTuple))
+# ---------------------------------------------------------------------------------
+
+# 64. Yalnız bir elementli tuple yarat — vergülün niyə vacib olduğunu göstər.
+# myTuple = ("Python",)
+# print(type(myTuple))
+# fakeTuple = "Python"
+# print(type(fakeTuple))
+# ---------------------------------------------------------------------------------
+
+# 65. len() ilə tuplenin uzunluğunu tap.
+# myTuple = ("Python", "C", "C++", "HTML")
+# print(len(myTuple))
+# ---------------------------------------------------------------------------------
+
+# 66. Tuple müxtəlif data tipli elementlər ehtiva edə bilər — bunu nümunə ilə göstər.
+# myTuple = ("Python", "C", False, "C++", True, 5, 0, -6, "HTML", 76.4)
+# print(myTuple)
+# ---------------------------------------------------------------------------------
+
+# 67. Tuple elementinə müsbət indeks ilə müraciət et.
+# myTuple = ("Python", "C", "C++", "HTML")
+# print(myTuple[2])
+# ---------------------------------------------------------------------------------
+
+# 68. Mənfi indeks istifadə edərək tuplenin sonuncu elementini götür.
+# myTuple = ("Python", "C", "C++", "HTML")
+# print(myTuple[-1])
+# ---------------------------------------------------------------------------------
+
+# 69. Slice ilə tuplenin ortasındakı bir hissəni götür.
+# myTuple = ("Python", "C", False, "C++", True, 5, 0, -6, "HTML", 76.4)
+# partTuple = myTuple[2:6]
+# print(partTuple)
+# ---------------------------------------------------------------------------------
+
+# 70. in operatoru ilə bir dəyərin tuple-da olub-olmadığını yoxla.
+# myTuple = ("Python", "C", "C++", "HTML")
+# if "Python" in myTuple:
+#     print("Var")
+# else:
+#     print("Yoxdur")
+# ---------------------------------------------------------------------------------
+
+# 71. Tuple-ı listə çevir, element əlavə et, yenidən tuple-a çevir.
+# myTuple = ("Python", "C", "C++", "HTML")
+# myTuple = list(myTuple)
+# myTuple.append("React")
+# myTuple = tuple(myTuple)
+# print(myTuple)
+# print(type(myTuple))
+# ---------------------------------------------------------------------------------
+
+# 72. + ilə iki tuple-ı birləşdir (yeni tuple yarat).
+# firstTuple = ("Python", "C", "C++")
+# secondTuple = ("HTML", "CSS", "JS", "React")
+# newTuple = firstTuple + secondTuple
+# print(newTuple)
+# ---------------------------------------------------------------------------------
+
+# 73. Tuple-a element əlavə etməyə birbaşa cəhd et — xətanı izah et.
+# myTuple = ("Python", "C", "C++", "HTML")
+# newTuple = myTuple + "CSS"
+# print(newTuple)
+# Tuple dəyişdirilə bilməz!!!
+# ---------------------------------------------------------------------------------
+
+# 74. del açar sözü ilə tuple-ın özünü tamamilə sil.
+# myTuple = ("Python", "C", "C++", "HTML")
+# print(myTuple)
+# del myTuple
+# ---------------------------------------------------------------------------------
+
+# 75. 
