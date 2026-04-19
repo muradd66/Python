@@ -279,42 +279,42 @@
 
 # Task-38
 
-import math
+# import math
 
-print(math.log(10))
+# print(math.log(10))
 
 
 # Task-39
 
-import math
+# import math
 
-print(math.log10(100))
+# print(math.log10(100))
 
 
 # Task-40
-import math
+# import math
 
-print(math.log2(16))
+# print(math.log2(16))
 
 
 # Task-41
 
-import math
+# import math
 
-print(math.sin(180))
+# print(math.sin(180))
 
 
 # Task-42
-import math
+# import math
 
-print(math.cos(120))
+# print(math.cos(120))
 
 
 # Task-43
 
-import math
+# import math
 
-print(math.tan(120))
+# print(math.tan(120))
 
 
 # Task-44
