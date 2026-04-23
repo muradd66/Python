@@ -187,4 +187,283 @@
 
 
 # 27.  Add 3 key-value pairs to a dictionary.
+# myDict = {}
+# myDict["name"] = "Murad"
+# myDict["age"] = 20
+# myDict["email"] = "mammadzada2006@gmail.com"
+# print(myDict)
+# ---------------------------------------------------------------------------------
 
+
+# 28. Try to add a duplicate key — what happens?
+# myDict = {}
+# myDict["name"] = "Murad"
+# myDict["age"] = 20
+# myDict["email"] = "mammadzada2006@gmail.com"
+# myDict["age"] = 19
+# print(myDict)
+# mövcud dəyəri yeniləyir.
+# ---------------------------------------------------------------------------------
+
+
+# 29. Find length of a dictionary using len().
+# myDict = {}
+# myDict["name"] = "Murad"
+# myDict["age"] = 20
+# myDict["email"] = "mammadzada2006@gmail.com"
+# lenDict = len(myDict)
+# print(lenDict)
+# ---------------------------------------------------------------------------------
+
+
+# 30. Is a dictionary mutable? Show with code
+# myDict = {"name": "Murad", "age": 20}
+# myDict["surname"] = "Mammadzada"
+# print(myDict)
+# Yes dictionary is mutable.
+# ---------------------------------------------------------------------------------
+
+
+# 31. Print value using an existing key.
+# myDict = {
+#     "name": "Murad",
+#     "surname": "Mammadzada",
+#     "age": 20,
+#     "email": "mammadzada2006@gmail.com",
+# }
+# print(myDict["name"])
+# print(myDict["age"])
+# ---------------------------------------------------------------------------------
+
+
+# 32. Use get() with a default value
+# myDict = {"name": "Murad", "age": 20, "email": "mammadzada2006@gmail.com"}
+# name = myDict.get("name", "Naməlum")
+# print({name})
+# city = myDict.get("city", "Şəhər qeyd olunmayıb")
+# print({city})
+# ---------------------------------------------------------------------------------
+
+
+# 33. Print all keys and values using keys() and values().
+# myDict = {
+#     "name": "Murad",
+#     "surname": "Mammadzada",
+#     "age": 20,
+#     "email": "mammadzada2006@gmail.com",
+# }
+# allKeys = myDict.keys()
+# allValues = myDict.values()
+# print(allKeys)
+# print(allValues)
+# ---------------------------------------------------------------------------------
+
+
+# 34. Print key-value pairs using items().
+# myDict = {
+#     "name": "Murad",
+#     "surname": "Mammadzada",
+#     "age": 20,
+#     "email": "mammadzada2006@gmail.com",
+# }
+# allItems=myDict.items()
+# print(allItems)
+# ---------------------------------------------------------------------------------
+
+
+# 35. Check if a key exists using in operator
+# myDict = {
+#     "name": "Murad",
+#     "surname": "Mammadzada",
+#     "age": 20,
+#     "email": "mammadzada2006@gmail.com",
+# }
+# print("name" in myDict)
+# print("city" in myDict)
+# ---------------------------------------------------------------------------------
+
+
+# 36. Update dictionary with another dictionary
+# myDict = {
+#     "name": "Murad",
+#     "surname": "Mammadzada",
+#     "age": 20,
+#     "email": "mammadzada2006@gmail.com",
+# }
+# brotherDict = {
+#     "name": "Yusif",
+#     "surname": "Mammadzada",
+#     "age": 14,
+# }
+# myDict.update(brotherDict)
+# print(myDict)
+# ---------------------------------------------------------------------------------
+
+
+# 37. Remove a key using pop() and return value.
+# myDict = {
+#     "name": "Murad",
+#     "surname": "Mammadzada",
+#     "age": 20,
+#     "email": "mammadzada2006@gmail.com",
+# }
+# delKey=myDict.pop("email")
+# print(myDict)
+# print(delKey)
+# ---------------------------------------------------------------------------------
+
+
+# 38.  Remove last inserted key-value using popitem().
+# myDict = {
+#     "name": "Murad",
+#     "surname": "Mammadzada",
+#     "age": 20,
+#     "email": "mammadzada2006@gmail.com",
+# }
+# print(myDict.popitem())
+# ---------------------------------------------------------------------------------
+
+
+# 39. Use setdefault() to add a value if key doesn’t exist.
+# myDict = {"name": "Murad"}
+# myDict.setdefault("age", 20)
+# print(myDict)
+# ---------------------------------------------------------------------------------
+
+
+# 40. Clear all items using clear().
+# myDict = {
+#     "name": "Murad",
+#     "surname": "Mammadzada",
+#     "age": 20,
+#     "email": "mammadzada2006@gmail.com",
+# }
+# myDict.clear()
+# print(myDict)
+# ---------------------------------------------------------------------------------
+
+
+# 41. Create a nested dictionary (two-level).
+# students = {
+#     "student_1": {
+#         "name": "Murad",
+#         "university": "ADNSU",
+#         "major": "Computer Engineering",
+#     },
+#     "student_2": {
+#         "name": "Yusif",
+#         "university": "TBD",
+#         "major": "School",
+#     },
+# }
+# print(students)
+# print(f"Birinci tələbənin universiteti: {students['student_1']['university']}")
+# ---------------------------------------------------------------------------------
+
+
+# 42. Access a value from nested dictionary.
+# students = {
+#     "student_1": {
+#         "name": "Murad",
+#         "university": "ADNSU",
+#         "major": "Computer Engineering",
+#     },
+#     "student_2": {
+#         "name": "Yusif",
+#         "university": "TBD",
+#         "major": "School",
+#     },
+# }
+# print(students["student_1"]["name"])
+# ---------------------------------------------------------------------------------
+
+
+# 43. Create square pairs using dictionary comprehension (1-5)
+# myDict={x: x**2 for x in range(1,6)}
+# print(myDict)
+# ---------------------------------------------------------------------------------
+
+
+# 44. Include only even keys using comprehension
+# myDict = {x: x for x in range(1, 11) if x % 2 == 0}
+# print(myDict)
+# ---------------------------------------------------------------------------------
+
+
+# 45.  Find max and min values in dictionary
+# scores = {"Murad": 89, "Yusif": 95, "Cavidan": 78, "Adas": 92}
+# max_score = max(scores.values())
+# min_score = min(scores.values())
+
+# print(max_score)
+# print(min_score)
+# ---------------------------------------------------------------------------------
+
+
+# 46. Convert dictionary keys to a set
+# myDict = {
+#     "name": "Murad",
+#     "surname": "Mammadzada",
+#     "age": 20,
+#     "email": "mammadzada2006@gmail.com",
+# }
+# myDict_keys=myDict.keys()
+# new_set=set(myDict_keys)
+# print(new_set)
+# ---------------------------------------------------------------------------------
+
+
+# 47. Find unique values as a set.
+# myDict = {
+#     "name": "Murad",
+#     "surname": "Mammadzada",
+#     "age": 20,
+#     "email": "mammadzada2006@gmail.com",
+# }
+# myDict_values = myDict.values()
+# unique_values = set(myDict_values)
+# print(unique_values)
+# ---------------------------------------------------------------------------------
+
+
+# 48. Create a new dict with selected keys.
+# myDict = {
+#     "name": "Murad",
+#     "surname": "Mammadzada",
+#     "age": 20,
+#     "email": "mammadzada2006@gmail.com",
+# }
+# selected_keys =["name", "age"]
+
+# new_dict={k: myDict[k] for k in selected_keys if k in myDict}
+# print(new_dict)
+# ---------------------------------------------------------------------------------
+
+
+# 49. Merge two dictionaries (update or ** operator).
+# dict_1 = {
+#     "name": "Murad",
+#     "surname": "Mammadzada",
+#     "age": 20,
+#     "email": "mammadzada2006@gmail.com",
+# }
+# dict_2 = {"status": "student", "experience": "no"}
+# merged_dict = {**dict_1, **dict_2}
+# print(merged_dict)
+# ---------------------------------------------------------------------------------
+
+
+# 50. Check if key exists, add if missing.
+# myDict = {
+#     "name": "Murad",
+#     "surname": "Mammadzada",
+#     "age": 20,
+#     "email": "mammadzada2006@gmail.com",
+# }
+# if "status" not in myDict:
+#     myDict["status"] = "student"
+# print(myDict)
+# ---------------------------------------------------------------------------------
+
+
+# 51. Print keys and values using a for loop.
