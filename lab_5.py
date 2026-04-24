@@ -467,3 +467,120 @@
 
 
 # 51. Print keys and values using a for loop.
+# myDict = {
+#     "name": "Murad",
+#     "surname": "Mammadzada",
+#     "age": 20,
+#     "email": "mammadzada2006@gmail.com",
+# }
+# for key, value in myDict.items():
+#     print(key, ":", value)
+# ---------------------------------------------------------------------------------
+
+
+# 52. Multiply all values by 10 using comprehension.
+# myDict = {x: x * 10 for x in range(1, 10)}
+# print(myDict)
+# ---------------------------------------------------------------------------------
+
+
+# 53. Create a set from dictionary keys using comprehension
+# myDict = {
+#     "name": "Murad",
+#     "surname": "Mammadzada",
+#     "age": 20,
+#     "email": "mammadzada2006@gmail.com",
+# }
+# mySet={i for i in myDict.keys()}
+# print(mySet)
+# ---------------------------------------------------------------------------------
+
+
+# 54. Filter values using loop and condition.
+# scores = {
+#     "Murad": 79,
+#     "Yusif": 55,
+#     "Cavidan": 78,
+#     "Adas": 92,
+#     "Rustam": 63,
+#     "Omar": 72,
+# }
+# for key, value in scores.items():
+#     if value > 70:
+#         print(key, ":", value)
+# ---------------------------------------------------------------------------------
+
+
+# 55. Print nested dictionary elements using nested loops
+# students = {
+#     "student_1": {
+#         "name": "Murad",
+#         "university": "ADNSU",
+#         "major": "Computer Engineering",
+#     },
+#     "student_2": {
+#         "name": "Yusif",
+#         "university": "TBD",
+#         "major": "School",
+#     },
+# }
+# for key, value in students.items():
+#     print(key)
+#     for k, v in value.items():
+#         print(k, ":", v)
+# ---------------------------------------------------------------------------------
+
+
+# 56. Remove duplicates from a list using set and dictionary.
+# myList = [1, 2, 3, 4, 4, 3, 5, 3, 2, 2, 1, 7, 9, 19, 7]
+# mySet = set(myList)
+# myDict=dict.fromkeys(myList)
+# print(mySet)
+# print(myDict)
+# ---------------------------------------------------------------------------------
+
+
+# 57. Increment a dictionary value for an existing key (default 0)
+# scores = {
+#     "Murad": 79,
+#     "Yusif": 95,
+#     "Cavidan": 78,
+#     "Adas": 92,
+# }
+# scores["Murad"] += 12
+# scores["Cavidan"]+=3
+# print(scores)
+# ---------------------------------------------------------------------------------
+
+
+# 58. Check value in dict, add if missing (get + if)
+# myDict = {
+#     "name": "Murad",
+#     "surname": "Mammadzada",
+#     "age": 20,
+#     "email": "mammadzada2006@gmail.com",
+# }
+# if "status" not in myDict:
+#     myDict["status"] = "student"
+# print(myDict)
+# ---------------------------------------------------------------------------------
+
+
+# 59. Create filtered nested dict using comprehension.
+# students = {
+#     "Murad": {"age": 20, "grade": 85},
+#     "Yusif": {"age": 22, "grade": 55},
+#     "Cavidan": {"age": 21, "grade": 71},
+#     "Adas": {"age": 19, "grade": 48},
+# }
+# filtered={k: v for k,v in students.items() if v["grade"]>71}
+# print(filtered)
+# ---------------------------------------------------------------------------------
+
+
+# 60. Create a frequency counter using set and dictionary
+# fruits = ["apple", "banana", "apple", "cherry", "banana", "apple"]
+# unique_fruits = set(fruits) 
+# frequency = {fruit: fruits.count(fruit) for fruit in unique_fruits}
+# print(frequency)
+# ---------------------------------------------------------------------------------
